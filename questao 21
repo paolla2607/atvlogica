@@ -1,0 +1,33 @@
+<?php
+
+$professorRenata = "Renata";
+$diaRenata = "terça";
+
+$professorIsrael = "Israel";
+$diaIsrael = "quinta";
+
+if ($professorRenata == "Renata") {
+
+    if ($diaRenata == "segunda") {
+        echo "Renata: o horário não pode ser alocado.<br>";
+    } else if ($diaRenata == "terça") {
+        echo "Renata: aula de Propulsão de Foguetes alocada com sucesso.<br>";
+    } else {
+        echo "Renata: aula alocada com sucesso.<br>";
+    }
+
+}
+
+if ($professorIsrael == "Israel") {
+
+    if ($diaIsrael == "sexta") {
+        echo "Israel: o horário não pode ser alocado.<br>";
+    } else if ($diaIsrael == "quinta") {
+        echo "Israel: aula de Estruturas de Foguetes alocada com sucesso.<br>";
+    } else {
+        echo "Israel: aula alocada com sucesso.<br>";
+    }
+
+}
+
+?>
