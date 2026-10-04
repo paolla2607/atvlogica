@@ -1,0 +1,25 @@
+<?php
+
+$horasPorDia = 65;
+$dias = 4;
+
+$horasNormais = 60 * $dias;
+$horasTrabalhadas = $horasPorDia * $dias;
+
+if ($horasTrabalhadas > $horasNormais) {
+
+    $horasExtras = $horasTrabalhadas - $horasNormais;
+    $descanso = $horasExtras * 1.5;
+
+} else {
+
+    $horasExtras = 0;
+    $descanso = 0;
+
+}
+
+echo "Horas trabalhadas: $horasTrabalhadas<br>";
+echo "Horas extras: $horasExtras<br>";
+echo "Descanso adicional: $descanso horas";
+
+?>
