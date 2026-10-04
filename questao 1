@@ -1,0 +1,33 @@
+<?php
+
+$a = 8;
+$b = 3;
+$c = 5;
+
+if ($a >= $b && $a >= $c) {
+    echo "Maior: $a";
+    
+    if ($b <= $c) {
+        echo "<br>Menor: $b";
+    } else {
+        echo "<br>Menor: $c";
+    }
+} else if ($b >= $a && $b >= $c) {
+    echo "Maior: $b";
+    
+    if ($a <= $c) {
+        echo "<br>Menor: $a";
+    } else {
+        echo "<br>Menor: $c";
+    }
+} else {
+    echo "Maior: $c";
+    
+    if ($a <= $b) {
+        echo "<br>Menor: $a";
+    } else {
+        echo "<br>Menor: $b";
+    }
+}
+
+?>
