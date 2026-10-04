@@ -1,0 +1,44 @@
+<?php
+
+$tipo = "Alcatra";
+$kg = 6;
+$cartao = "SIM";
+
+if ($tipo == "File Duplo") {
+    if ($kg <= 5) {
+        $preco = 4.90;
+    } else {
+        $preco = 5.80;
+    }
+} else if ($tipo == "Alcatra") {
+    if ($kg <= 5) {
+        $preco = 5.90;
+    } else {
+        $preco = 6.80;
+    }
+} else {
+    if ($kg <= 5) {
+        $preco = 6.90;
+    } else {
+        $preco = 7.80;
+    }
+}
+
+$total = $kg * $preco;
+
+if ($cartao == "SIM") {
+    $desconto = $total * 5 / 100;
+} else {
+    $desconto = 0;
+}
+
+$valorFinal = $total - $desconto;
+
+echo "Carne: $tipo<br>";
+echo "Quantidade: $kg Kg<br>";
+echo "Preço por Kg: R$ $preco<br>";
+echo "Total: R$ $total<br>";
+echo "Desconto: R$ $desconto<br>";
+echo "Valor final: R$ $valorFinal";
+
+?>
