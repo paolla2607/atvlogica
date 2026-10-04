@@ -1,0 +1,33 @@
+<?php
+
+$plantacaoPronta = "SIM";
+$quantidadeMilho = 120;
+$maquinaDisponivel = "SIM";
+$maquinaReserva = "NAO";
+$maquinaManutencao = "NAO";
+
+if ($plantacaoPronta == "SIM") {
+
+    if ($quantidadeMilho >= 100) {
+
+        if ($maquinaDisponivel == "SIM" || $maquinaReserva == "SIM") {
+
+            if ($maquinaManutencao == "NAO") {
+                echo "A máquina pode iniciar a colheita";
+            } else {
+                echo "A máquina principal está em manutenção";
+            }
+
+        } else {
+            echo "Não há máquina disponível";
+        }
+
+    } else {
+        echo "A quantidade de milho é menor que 100 sacas";
+    }
+
+} else {
+    echo "A plantação não está pronta para a colheita";
+}
+
+?>
