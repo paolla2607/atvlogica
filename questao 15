@@ -1,0 +1,21 @@
+<?php
+
+$forca = 80;
+$inteligencia = 50;
+$agilidade = 60;
+
+if ($forca == $inteligencia || $forca == $agilidade || $inteligencia == $agilidade) {
+    echo "Classe híbrida";
+} else if ($forca > $inteligencia && $forca > $agilidade) {
+    echo "Guerreiro";
+} else if ($inteligencia > $forca && $inteligencia > $agilidade) {
+    echo "Mago";
+} else {
+    echo "Arqueiro";
+}
+
+echo "<br>Força: $forca";
+echo "<br>Inteligência: $inteligencia";
+echo "<br>Agilidade: $agilidade";
+
+?>
