@@ -1,0 +1,41 @@
+<?php
+
+$p1 = "SIM";
+$p2 = "NAO";
+$p3 = "SIM";
+$p4 = "NAO";
+$p5 = "SIM";
+
+$sim = 0;
+
+if ($p1 == "SIM") {
+    $sim++;
+}
+
+if ($p2 == "SIM") {
+    $sim++;
+}
+
+if ($p3 == "SIM") {
+    $sim++;
+}
+
+if ($p4 == "SIM") {
+    $sim++;
+}
+
+if ($p5 == "SIM") {
+    $sim++;
+}
+
+if ($sim == 2) {
+    echo "Suspeita";
+} else if ($sim == 3 || $sim == 4) {
+    echo "Cúmplice";
+} else if ($sim == 5) {
+    echo "Assassino";
+} else {
+    echo "Inocente";
+}
+
+?>
