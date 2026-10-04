@@ -1,0 +1,44 @@
+<?php
+
+$numero = 1;
+$linha = 3;
+$coluna = 3;
+
+$malha = [
+    [1, 2, 3],
+    [3, 1, 2],
+    [2, 3, 0]
+];
+
+if ($numero < 1 || $numero > 3) {
+
+    echo "Número inválido";
+
+} else {
+
+    $valido = true;
+
+    for ($i = 0; $i < 3; $i++) {
+
+        if ($malha[$linha - 1][$i] == $numero) {
+            $valido = false;
+        }
+
+    }
+
+    for ($i = 0; $i < 3; $i++) {
+
+        if ($malha[$i][$coluna - 1] == $numero) {
+            $valido = false;
+        }
+
+    }
+
+    if ($valido == true) {
+        echo "Jogada válida";
+    } else {
+        echo "Jogada inválida";
+    }
+}
+
+?>
