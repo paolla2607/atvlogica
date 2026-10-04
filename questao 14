@@ -1,0 +1,21 @@
+<?php
+
+$consumo = 250;
+
+if ($consumo <= 100) {
+    $valorKwh = 0.50;
+} else if ($consumo <= 200) {
+    $valorKwh = 0.70;
+} else if ($consumo <= 300) {
+    $valorKwh = 0.90;
+} else {
+    $valorKwh = 1.10;
+}
+
+$total = $consumo * $valorKwh;
+
+echo "Consumo: $consumo kWh<br>";
+echo "Valor do kWh: R$ $valorKwh<br>";
+echo "Valor total: R$ $total";
+
+?>
