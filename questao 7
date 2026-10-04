@@ -1,0 +1,30 @@
+<?php
+
+$saque = 256;
+
+if ($saque < 10 || $saque > 600) {
+    echo "Valor de saque inválido";
+} else {
+
+    $nota100 = intdiv($saque, 100);
+    $saque = $saque % 100;
+
+    $nota50 = intdiv($saque, 50);
+    $saque = $saque % 50;
+
+    $nota10 = intdiv($saque, 10);
+    $saque = $saque % 10;
+
+    $nota5 = intdiv($saque, 5);
+    $saque = $saque % 5;
+
+    $nota1 = $saque;
+
+    echo "Notas de R$100: $nota100<br>";
+    echo "Notas de R$50: $nota50<br>";
+    echo "Notas de R$10: $nota10<br>";
+    echo "Notas de R$5: $nota5<br>";
+    echo "Notas de R$1: $nota1";
+}
+
+?>
