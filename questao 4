@@ -1,0 +1,30 @@
+<?php
+
+$valorHora = 20;
+$horas = 100;
+
+$bruto = $valorHora * $horas;
+
+$fgts = $bruto * 11 / 100;
+$sindicato = $bruto * 3 / 100;
+
+if ($bruto <= 900) {
+    $ir = 0;
+} else if ($bruto <= 1500) {
+    $ir = $bruto * 5 / 100;
+} else if ($bruto <= 2500) {
+    $ir = $bruto * 10 / 100;
+} else {
+    $ir = $bruto * 20 / 100;
+}
+
+$descontos = $sindicato + $ir;
+$liquido = $bruto - $descontos;
+
+echo "Salário Bruto: R$ $bruto<br>";
+echo "FGTS: R$ $fgts<br>";
+echo "Sindicato: R$ $sindicato<br>";
+echo "Imposto de Renda: R$ $ir<br>";
+echo "Salário Líquido: R$ $liquido";
+
+?>
