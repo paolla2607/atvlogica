@@ -1,0 +1,23 @@
+<?php
+
+$preco = 1000;
+$codigo = 1;
+
+if ($codigo == 1) {
+    $valor = $preco - ($preco * 10 / 100);
+} else if ($codigo == 2) {
+    $valor = $preco - ($preco * 5 / 100);
+} else if ($codigo == 3) {
+    $valor = $preco;
+} else if ($codigo == 4) {
+    $valor = $preco + ($preco * 10 / 100);
+} else {
+    echo "Código inválido";
+}
+
+if ($codigo >= 1 && $codigo <= 4) {
+    echo "Preço: R$ $preco<br>";
+    echo "Valor a pagar: R$ $valor";
+}
+
+?>
