@@ -1,0 +1,18 @@
+<?php
+
+$horas = 50;
+$valorHora = 20;
+
+if ($horas <= 40) {
+    $salario = $horas * $valorHora;
+} else if ($horas <= 60) {
+    $horasExtras = $horas - 40;
+    $salario = (40 * $valorHora) + ($horasExtras * $valorHora * 1.5);
+} else {
+    $horasExtras = $horas - 40;
+    $salario = (40 * $valorHora) + (20 * $valorHora * 1.5) + (($horasExtras - 20) * $valorHora * 2);
+}
+
+echo "Salário semanal: R$ $salario";
+
+?>
