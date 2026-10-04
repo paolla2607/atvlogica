@@ -1,0 +1,31 @@
+<?php
+
+$nota1 = 8;
+$nota2 = 9;
+
+$media = ($nota1 + $nota2) / 2;
+
+if ($media >= 9) {
+    $conceito = "A";
+    $mensagem = "APROVADO";
+} else if ($media >= 7.5) {
+    $conceito = "B";
+    $mensagem = "APROVADO";
+} else if ($media >= 6) {
+    $conceito = "C";
+    $mensagem = "APROVADO";
+} else if ($media >= 4) {
+    $conceito = "D";
+    $mensagem = "REPROVADO";
+} else {
+    $conceito = "E";
+    $mensagem = "REPROVADO";
+}
+
+echo "Nota 1: $nota1<br>";
+echo "Nota 2: $nota2<br>";
+echo "Média: $media<br>";
+echo "Conceito: $conceito<br>";
+echo "$mensagem";
+
+?>
