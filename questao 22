@@ -1,0 +1,10 @@
+<?php
+
+$distanciaBarraca = 6;
+$distanciaLadrao = 8;
+
+$hipotenusa = sqrt(($distanciaBarraca * $distanciaBarraca) + ($distanciaLadrao * $distanciaLadrao));
+
+echo "A distância entre João e o ladrão é: $hipotenusa metros";
+
+?>
