@@ -1,0 +1,31 @@
+<?php
+
+$horasPlantao = 20;
+
+$mixxy = 0;
+$ninin = 0;
+$vez = "Mixxy";
+
+while ($horasPlantao > 0) {
+
+    if ($horasPlantao >= 6) {
+        $horas = 6;
+    } else {
+        $horas = $horasPlantao;
+    }
+
+    if ($vez == "Mixxy") {
+        $mixxy = $mixxy + $horas;
+        $vez = "Ninin";
+    } else {
+        $ninin = $ninin + $horas;
+        $vez = "Mixxy";
+    }
+
+    $horasPlantao = $horasPlantao - $horas;
+}
+
+echo "Mixxy-X789 trabalhou: $mixxy horas<br>";
+echo "Ninin-X989 trabalhou: $ninin horas";
+
+?>
