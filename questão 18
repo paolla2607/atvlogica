@@ -1,0 +1,25 @@
+<?php
+
+$velocidade = 14;
+$cansada = "SIM";
+$chovendo = "NAO";
+
+if ($velocidade < 10 || $velocidade > 20) {
+
+    echo "Velocidade inadequada";
+
+} else if ($cansada == "SIM" && $velocidade > 15) {
+
+    echo "Velocidade inadequada";
+
+} else if ($chovendo == "SIM" && $velocidade > 12) {
+
+    echo "Velocidade inadequada";
+
+} else {
+
+    echo "Velocidade adequada";
+
+}
+
+?>
